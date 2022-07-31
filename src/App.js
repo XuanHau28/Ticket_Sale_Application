@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import 'antd/dist/antd.css';
+import { Col, Row } from 'antd';
+import React from 'react';
 import './App.css';
+import Menu from "./components/Home/menu";
+import Search from "./components/Home/search";
+import Home from "./components/Home/Home";
+import Management from './components/management';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Check from './components/Home/check';
+import Services from './components/Home/services';
+
+const App = () => (
+  <div className="container">
+  <Row>
+    <Col span={18} push={6}>
+      <Search/>
+      <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/management" element={<Management/>}></Route>
+      <Route path="/check-ticket" element={<Check/>}></Route>
+      <Route path="/services" element={<Services/>}></Route>      
+      </Routes>
+    </Col>
+    <Col span={6} pull={18}>
+      <Menu />
+    </Col>
+  </Row>
+  </div>
+ 
+);
 
 export default App;

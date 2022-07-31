@@ -1,0 +1,190 @@
+/* Menu CSS */
+.Logo{
+    margin-bottom: 59px;
+    margin-left: 33px;
+}
+a{
+   
+    /* identical to box height, or 144% */
+    color: #1E0D03;
+    opacity: 0.6;
+    letter-spacing: 0.015em;
+}
+ul li {
+    list-style: none;
+}
+.Menu ul li {
+    list-style: none;
+    width: 252px;
+    height: 56px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1E0D03;
+    margin-left: 10px;
+}
+
+nav a.active{
+    background-color: #FFB800;
+    border-radius: 8px;
+     font-size: 18px;
+     line-height: 24px;
+     Padding: 15px 81px 15px 24px;
+     opacity: 1;
+     color: #fff;
+     font-weight: 700;
+     margin-left: -25px;
+ }
+
+.icon{
+    padding-right: 15px;
+    opacity: 0.6;
+}
+/* Seach CSS */
+.Search{
+    width: 437px;
+    height: 48px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 11px;
+    opacity: 30%;
+    font-style: italic;
+  
+}
+.SearchIcon{
+    margin-left: -49px;
+}
+/* Acc_Mail_Noti CSS */
+
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+.search-noti{
+    display: flex;
+    justify-content: space-between;
+}
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+.AccMailNoti > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 29px;
+    margin-right: 32px;
+}
+.AccMailNoti ul li {
+    list-style: none;
+    display: inline-block;
+   
+}
+.Account{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background: url("../../assets/images/Acc.png");
+    
+}
+
+/* Content CSS */
+.content{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    min-height: 1080px;
+    margin-right: 32px;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.content h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+.content h3 {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+padding-left: 24px;
+    padding-top: 32px;
+}
+a:hover {
+    color: #1E0D03;
+}
+/* Chart */
+.chart {
+    margin: 27px 55px 73px 24px;
+}
+.date-picker {
+    margin-left: 1176px ;
+}
+.date-picker2 {
+    margin-left: 24px ;
+    margin-top: 83px;
+}
+/*management component */
+
+.content .SearchList{
+    margin: 32px 0px 0px 48px;
+    width: 437px;
+    height: 48px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 11px;
+    opacity: 30%;
+    font-style: italic;
+}
+.content .Filter{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -54px;
+    margin-right: 36px;
+}
+.content ul li button {
+    padding: 5px 24px;
+    color: #FF993C;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+.content .TicketList{
+    margin: 31px 24px 0px 24px;
+}
+/* check component */
+.content .check{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -54px;
+    margin-right: 36px;
+}
+.content .check button {
+    background-color: #FF993C;
+    color: #FFF;
+    font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+padding: 10px 26px;
+}
