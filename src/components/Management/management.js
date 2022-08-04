@@ -1,6 +1,7 @@
 import React from 'react'
-import Search from "../assets/images/Search.svg";
-import Filter from '../assets/images/Filter.svg';
+import Search from "../../assets/images/Search.svg";
+import Filter from '../../assets/images/Filter.svg';
+import '../Management/managementStyle.css'
 import { Space, Table, Tag } from 'antd';
 const columns = [
     {

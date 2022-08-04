@@ -1,6 +1,5 @@
 import React from 'react'
 import Search from "../../assets/images/Search.svg";
-import Filter from '../../assets/images/Filter.svg';
 export default function services() {
   return (
     <div className='content'>

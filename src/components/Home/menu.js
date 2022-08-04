@@ -1,15 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../../assets/images/logo.png";
-import '../Home/Home.css';
+import '../Home/HomeStyle.css';
 import icon1 from "../../assets/images/Vector.svg";
 import icon2 from "../../assets/images/Vector2.svg";
 import icon3 from "../../assets/images/Vector3.svg";
 import icon4 from "../../assets/images/Vector4.svg";
 
 export default function menu() {
-  const activeLink = 'bg-blue-100 text-black';
-  const normalLink = '';
+
   return (
     <div className="Menu">
       <nav>

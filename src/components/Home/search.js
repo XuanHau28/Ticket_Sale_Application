@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Home/Home.css';
+import '../Home/HomeStyle.css';
 import Search from "../../assets/images/Search.svg";
 import Mail from "../../assets/images/Mail.svg";
 import Noti from "../../assets/images/Noti.svg";

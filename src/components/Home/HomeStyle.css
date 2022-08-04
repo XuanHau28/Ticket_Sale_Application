@@ -128,10 +128,11 @@ padding-left: 24px;
 a:hover {
     color: #1E0D03;
 }
-/* Chart */
-.chart {
-    margin: 27px 55px 73px 24px;
+.content .LineChart{
+    margin: 29px 55px 0px 24px;
+  
 }
+
 .date-picker {
     margin-left: 1176px ;
 }
@@ -139,52 +140,52 @@ a:hover {
     margin-left: 24px ;
     margin-top: 83px;
 }
-/*management component */
-
-.content .SearchList{
-    margin: 32px 0px 0px 48px;
-    width: 437px;
-    height: 48px;
-    background: #EDE6E6;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    padding-left: 11px;
-    opacity: 30%;
-    font-style: italic;
-}
-.content .Filter{
+.content .chart{
     display: flex;
-    justify-content: flex-end;
-    margin-top: -54px;
-    margin-right: 36px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -134px;
 }
-.content ul li button {
-    padding: 5px 24px;
-    color: #FF993C;
+/* FamilyPackage, EventPackage Chart */
+.content .FamilyPackage{
+    padding-right: 100px;
+}
+.content .FamilyPackage p,
+.content .EventPackage p {
+    margin-left: 77px;
+    font-weight: 600;
     font-size: 18px;
-    line-height: 26px;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid;
-    border-radius: 6px;
-    margin-right: 12px;
+    line-height: 28px;
+    color: #1E0D03;
+    margin-bottom: 25px;
+   
 }
-.content .TicketList{
-    margin: 31px 24px 0px 24px;
+
+.FamilyPackageChart, .EventPackageChart{
+    width: 246px;
+    height: 246px;
 }
-/* check component */
-.content .check{
+.statistical{
     display: flex;
     justify-content: flex-end;
-    margin-top: -54px;
-    margin-right: 36px;
+    margin-right: 212px;
+    margin-top: -217px;
 }
-.content .check button {
-    background-color: #FF993C;
-    color: #FFF;
-    font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-padding: 10px 26px;
+.statistical .usedTickets,
+.unusedTickets{
+    width: 44px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin-right: 8px;
+}
+.statistical .usedTickets{
+    background-color: rgba(79, 117, 255, 1);
+}
+.statistical .unusedTickets{
+    background-color: 
+    rgba(255, 138, 72, 1);
+}
+.statistical ul li{
+    margin-bottom: 16px;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Search from "../../assets/images/Search.svg";
-import Filter from '../../assets/images/Filter.svg';
-
+import '../Check/checkStyle.css'
 export default function check() {
   return (
     <div className='content'>

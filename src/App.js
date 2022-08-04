@@ -5,11 +5,11 @@ import './App.css';
 import Menu from "./components/Home/menu";
 import Search from "./components/Home/search";
 import Home from "./components/Home/Home";
-import Management from './components/management';
+import Management from './components/Management/management';
 import { Route, Routes } from 'react-router-dom';
 
-import Check from './components/Home/check';
-import Services from './components/Home/services';
+import Check from './components/Check/check';
+import Services from './components/Services/services';
 
 const App = () => (
   <div className="container">

@@ -1,0 +1,32 @@
+.content .SearchList{
+    margin: 32px 0px 0px 48px;
+    width: 437px;
+    height: 48px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 11px;
+    opacity: 30%;
+    font-style: italic;
+}
+.content .Filter{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -54px;
+    margin-right: 36px;
+}
+.content ul li button {
+    padding: 5px 24px;
+    color: #FF993C;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+.content .TicketList{
+    margin: 31px 24px 0px 24px;
+}

@@ -1,31 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { DatePicker, Space } from 'antd';
-import { Doughnut } from 'react-chartjs-2';
-import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS, Title, Tooltip, LineElement, Legend, CategoryScale, LinearScale, PointElement, Filler } from 'chart.js';
-ChartJS.register(
-  Title, Tooltip, LineElement, Legend,
-  CategoryScale, LinearScale, PointElement, Filler
-)
+import LineChart from './LineChart';
+import FamilyPackageChart from './FamilyPackageChart';
+import EventPackageChart from './EventPackageChart';
+
 //display Date
 const onChange = (date, dateString) => {
   console.log(date, dateString);
 };
 export default function Home() {
-  // Chart
-const [data, setData] = useState({
-  labels: ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'CN',],
-  datasets: [ 
-    {
-      data: [150, 170, 160, 190, 195, 200, 190], 
-      backgroundColor: 'rgba(250, 160, 95, 0.16)',
-      borderColor: 'rgba(255, 138, 72, 1)',
-      tension: 0.4,
-      fill: true,
-    }
-
-  ]
-})
+ 
   return (
     <div className='content'>
         <h1>Thống kê</h1>
@@ -33,28 +17,28 @@ const [data, setData] = useState({
         <Space direction="vertical">
         <DatePicker className='date-picker' placeholder='Enter Date'  onChange={onChange} />
         </Space>
-        <div className='chart'>
-        <Line data={data} options={{
-          plugins: {
-            legend: { 
-              display: false
-            }
-          },
-          scales: {
-            x:{
-              grid: {
-                display: false
-              }
-            }
-          }
-        }}/>
-    </div>
-    <p style={{marginLeft:"24px"}}>Tổng doanh thu theo tuần</p> 
-    <p style={{marginLeft:"24px"}}><span>525.145.000</span> đồng</p>
-    <Space direction="vertical">
-        <DatePicker className='date-picker2' placeholder='Enter Date'  onChange={onChange} />
+        <LineChart />
+          <p style={{marginLeft:"24px", marginTop:"73px"}}>Tổng doanh thu theo tuần</p> 
+          <p style={{marginLeft:"24px", fontSize:"14px", fontWeight:"500"}}><span style={{ fontWeight:"700", fontSize:"24px", lineHeight:"30px"}}>525.145.000</span> đồng</p>
+        <Space direction="vertical">
+          <DatePicker className='date-picker2' placeholder='Enter Date'  onChange={onChange} />
         </Space>
-        {/* <Doughnut /> */}
+        <div className='chart'>
+        <div className='FamilyPackage'>
+          <p>Gói gia đình</p>
+          <FamilyPackageChart />
+        </div>
+        <div className='EventPackage'>
+          <p>Gói sự kiện</p>
+          <EventPackageChart />
+        </div>
+        </div>
+        <div className='statistical'>
+        <ul >
+          <li><span className='usedTickets'></span>Vé đã sử dụng</li>
+          <li><span className='unusedTickets'></span>Vé chưa sử dụng</li>
+        </ul>
+        </div>
     </div>
     
   )
