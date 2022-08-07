@@ -30,3 +30,8 @@
 .content .TicketList{
     margin: 31px 24px 0px 24px;
 }
+
+ .ant-table-pagination-right{
+    display: flex;
+    justify-content: center;
+}
