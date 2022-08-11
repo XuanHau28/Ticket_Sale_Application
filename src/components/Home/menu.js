@@ -2,10 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../../assets/images/logo.png";
 import '../Home/HomeStyle.css';
-import icon1 from "../../assets/images/Vector.svg";
-import icon2 from "../../assets/images/Vector2.svg";
-import icon3 from "../../assets/images/Vector3.svg";
-import icon4 from "../../assets/images/Vector4.svg";
+import HomeIcon from "../../assets/images/Vector.svg";
+import ManagementIcon from "../../assets/images/Vector2.svg";
+import Check from "../../assets/images/Vector3.svg";
+import Setting from "../../assets/images/Vector4.svg";
+import EventList from '../../assets/images/event.svg'
 
 export default function menu() {
 
@@ -16,24 +17,30 @@ export default function menu() {
         <ul>
           <li className='active'>
             <NavLink to="/" >
-              <img className="icon" src={icon1} />
+              <img className="icon" src={HomeIcon} />
               Trang chủ
             </NavLink>
           </li>
           <li>
             <NavLink to="/management"  >
-              <img className="icon" src={icon2} />
+              <img className="icon" src={ManagementIcon} />
                 Quản lý vé
             </NavLink>
           </li>
           <li>
             <NavLink to="/check-ticket" >
-              <img className="icon" src={icon3} />
+              <img className="icon" src={Check} />
                 Đối soát vé
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/event-list" >
+              <img className="icon" src={EventList} />
+                Danh sách sự kiện
+            </NavLink>
+          </li>
           <li style={{opacity:0.6}}>
-              <img className="icon" src={icon4}/>
+              <img className="icon" src={Setting}/>
             Cài đặt
           </li>
           <ul>
