@@ -3,21 +3,20 @@ import { Radio } from 'antd';
 import { DatePicker, Space } from 'antd';
 import '../Management/popup.css'
 import { Checkbox, Col, Row } from 'antd';
-import Filter from '../../assets/images/Filter.svg';
 
-
-const onChange = (checkedValues) => {
-  console.log('checked = ', checkedValues);
-};
 
 export default function Popup(props) {
-  
+
+
   //Radio checked
-  const [value, setValue] = useState(1);
-  const onChange = (e) => {
-    console.log('radio checked', e.target.value);
-    setValue(e.target.value);
-  };
+  const [value, setValue] = useState(0);
+
+    const handleChange = event => {
+      if (!event.target.checked) {
+        
+    } 
+    setValue(value);
+  }
   return  (
     <div className="popup">
         <div className="overlay">
@@ -27,51 +26,52 @@ export default function Popup(props) {
            <section className='from-day'>
             <p>Từ ngày</p>
             <Space direction="vertical">
-            <DatePicker className='date-picker' placeholder='01/04/2021'  onChange={onChange} />
+            <DatePicker className='date-picker' placeholder='01/04/2021' />
             </Space>
            </section>
            <section>
             <p>Đến ngày</p>
             <Space direction="vertical">
-            <DatePicker className='date-picker' placeholder='01/04/2021'  onChange={onChange} />
+            <DatePicker className='date-picker' placeholder='01/04/2021' />
             </Space>
            </section>
            </section>
            <section className='status-of-use'>
             <p>Tình trạng sử dụng</p>
-            <Radio.Group onChange={onChange} value={value}>
-              <Radio value={1}>Tất cả</Radio>
-              <Radio value={2}>Đã sử dụng</Radio>
-              <Radio value={3}>Chưa sử dụng</Radio>
-              <Radio value={4}>Hết hạn</Radio>
+            <Radio.Group  >
+              <Radio  value="A">Tất cả</Radio>
+              <Radio  value="B">Đã sử dụng</Radio>
+              <Radio  value="C">Chưa sử dụng</Radio>
+              <Radio  value="D">Hết hạn</Radio>
             </Radio.Group>
            </section>
            <section className="gate-checkin">
             <h3>Cổng Check - in</h3>
-            <Checkbox.Group
+            <Checkbox.Group 
     style={{
       width: '100%',
     }}
-    onChange={onChange}
+ 
+  
   >
     <Row>
       <Col span={8}>
-        <Checkbox value="A">Tất cả</Checkbox>
+        <Checkbox onChange={handleChange} value={0}>Tất cả</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox value="B">Cổng 1</Checkbox>
+        <Checkbox className="checkbox" value={1}>Cổng 1</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox value="C">Cổng 2</Checkbox>
+        <Checkbox className="checkbox" value={2}>Cổng 2</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox value="D">Cổng 3</Checkbox>
+        <Checkbox className="checkbox" value={3}>Cổng 3</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox value="E">Cổng 4</Checkbox>
+        <Checkbox className="checkbox" value={4}>Cổng 4</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox value="F">Cổng 5</Checkbox>
+        <Checkbox className="checkbox" value={5}>Cổng 5</Checkbox>
       </Col>
     </Row>
   </Checkbox.Group>

@@ -67,6 +67,12 @@
     width: 24px;
     height: 24px;
 }
+.popup  .model-content .ant-radio-inner::after{
+    top: 16%;
+    left: 16%;
+    width: 31px;
+    height: 31px;
+}
 .popup  .model-content .ant-radio-input ::after{
     margin-top: -12px;
     margin-left: -12px;

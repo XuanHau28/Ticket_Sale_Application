@@ -1,23 +1,32 @@
-
+.check-content{
+    display: flex;
+}
+.check-content .content {
+    width: 1097px;
+}
 .content .check{
     display: flex;
     justify-content: flex-end;
     margin-top: -54px;
     margin-right: 36px;
 }
-.content .check button {
-    background-color: #FF993C;
-    color: #FFF;
-    font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-padding: 10px 26px;
+.check-content .content .btn-export-file{
+    padding: 5px 24px;
+    color: #FF993C;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-radius: 6px;
+    margin-right: 12px;
+    margin-left: 388px;
 }
 .CheckTickets{
     margin: 31px 49px 0px 49px;
 }
-.FilterTickets{
-    max-width: 25%;
+
+.check-content .FilterTickets{
+    width: 446px;
     background-color: #FFFFFF;
     margin-top: 20px;
     max-height: 1080px;
@@ -25,12 +34,73 @@ padding: 10px 26px;
     border-radius: 24px;
     margin-bottom: 32px;
 }
-.ant-table-cell{
-
+.check-content .FilterTickets h1{
+    font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+margin: 22px 0px 0px 24px;
 }
 .ant-table-row-level-0{
- 
     color: #1E0D03;
-
+    opacity: 0.7;
+}
+.check-content .control-status{
+    margin-left: 22px;
+    margin-top: 32px;
+    display: flex;
+}
+.check-content .FilterTickets h2{
+    font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+opacity: 0.8;
+margin-right: 26px;
+}
+.check-content .control-status .ant-radio-wrapper{
+    font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #1E0D03;
 opacity: 0.7;
+}
+.check-content .control-status .ant-radio-inner {
+    width: 24px;
+    height: 24px;
+}
+.check-content .control-status .ant-radio-inner::after{
+    top: 16%;
+    left: 17%;
+    width: 30px;
+    height: 31px;
+}
+.check-content .FilterTickets .ticket-type{
+    margin-top: 26px;
+    margin-left: 22px;
+    display: flex;
+}
+.check-content .FilterTickets .ticket-type p{
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1E0D03;
+    opacity: 0.7;
+
+}
+.check-content .FilterTickets .start-date, .end-date{
+    margin-left: 22px;
+    margin-top: 24px;
+}
+.check-content button{
+    padding: 10px 60px;
+    color: #FF993C;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-radius: 6px;
+    margin-right: 12px;
+    margin-top: 20px;
+    margin-left: 142px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
 }

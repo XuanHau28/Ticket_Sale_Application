@@ -1,0 +1,20 @@
+.services .content .check button:first-child{
+    padding: 10px 30px;
+    color: #FF993C;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-radius: 8px;
+    margin-right: 12px;     
+}
+.services .content .check button:last-child{
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    background: #FF993C;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-right: 12px; 
+}

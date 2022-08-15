@@ -9,7 +9,7 @@ import Management from './components/Management/Management';
 import Event from './components/EventList/EventList'
 import { Route, Routes } from 'react-router-dom';
 
-import Check from './components/Check/check';
+import Check from './components/Check/Check';
 import Services from './components/Services/services';
 
 const App = () => (
