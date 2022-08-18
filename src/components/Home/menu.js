@@ -33,12 +33,6 @@ export default function menu() {
                 Đối soát vé
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/event-list" >
-              <img className="icon" src={EventList} />
-                Danh sách sự kiện
-            </NavLink>
-          </li>
           <li style={{opacity:0.6}}>
               <img className="icon" src={Setting}/>
             Cài đặt

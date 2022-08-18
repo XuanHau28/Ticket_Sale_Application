@@ -2,36 +2,20 @@ import React, { useEffect, useState, useRef } from 'react'
 import Search from "../../assets/images/Search.svg";
 import Filter from '../../assets/images/Filter.svg';
 import '../Management/managementStyle.css'
-import Data from './Data.js';
+import DataEvent from './DataEventPakage.js';
 import Popup from './Popup.js';
 import { NavLink } from 'react-router-dom';
 
-  
-export default function Management() {
-  // let menuRef = useRef();
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal)
-  }
-  
-  // useEffect(() => {
-  //  let handler = (event) => {
-  //     if(!menuRef.current.contains(event.target)){
-  //       setModal(false);
-  //   };
-  // };
-
-  //   document.addEventListener("mousedown", handler);
-
-  //   return() => {
-  //     document.removeEventListener("mousedown", handler);
-  //   }
-  // });
+export default function EventPakage() {
+    const [modal, setModal] = useState(false);
+    const toggleModal = () => {
+      setModal(!modal)
+    }
   return (
     <div className='content'>
-      <div className='family-package'>
+        <div className='event-package'>
         <h1 style={{ marginLeft:24}}>Danh sách vé</h1>
-        <ul className='family'>
+        <ul className='event'>
           <li className='active'><NavLink to='/management'>Gói gia đình</NavLink></li>
           <li><NavLink to='/event-pakage'>Gói sự kiện</NavLink></li>
         </ul>
@@ -46,8 +30,8 @@ export default function Management() {
             </Popup>
             </div>
         )}
-            <Data />
+            <DataEvent />
             </div>
     </div>
-  );
+  )
 }

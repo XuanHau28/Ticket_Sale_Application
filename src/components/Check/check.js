@@ -1,4 +1,4 @@
-import { Input, Radio, Space, DatePicker  } from 'antd';
+import { Radio, Space, DatePicker  } from 'antd';
 
 import React, { useState } from 'react';
 import Search from "../../assets/images/Search.svg";
@@ -46,7 +46,7 @@ export default function Check() {
             <section className='end-date'> 
               <h2>Đến ngày</h2>
               <Space direction="vertical">
-              <DatePicker className='date-picker' placeholder='01/04/2021'  onChange={onChange} />
+              <DatePicker className='date-picker' placeholder='dd/mm/yyyy'  onChange={onChange} />
               </Space>
             </section>
             <button >Lọc</button>

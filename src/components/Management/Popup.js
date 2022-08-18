@@ -5,19 +5,19 @@ import '../Management/popup.css'
 import { Checkbox, Col, Row } from 'antd';
 
 
-export default function Popup(props) {
+export default function Popup() {
 
+   
+  const [disabled, setDisabled] = useState(false);
+  const clickDisabled = () => {
+    setDisabled(!disabled);
+  }
 
   //Radio checked
   const [value, setValue] = useState(0);
 
-    const handleChange = event => {
-      if (!event.target.checked) {
-        
-    } 
-    setValue(value);
-  }
   return  (
+  
     <div className="popup">
         <div className="overlay">
           <div className="model-content">
@@ -56,22 +56,23 @@ export default function Popup(props) {
   >
     <Row>
       <Col span={8}>
-        <Checkbox onChange={handleChange} value={0}>Tất cả</Checkbox>
+        <Checkbox onChange={clickDisabled} value={0}>
+        Tất cả</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox className="checkbox" value={1}>Cổng 1</Checkbox>
+        <Checkbox disabled={disabled} value={1}>Cổng 1</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox className="checkbox" value={2}>Cổng 2</Checkbox>
+        <Checkbox disabled={disabled} value={2}>Cổng 2</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox className="checkbox" value={3}>Cổng 3</Checkbox>
+        <Checkbox disabled={disabled} value={3}>Cổng 3</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox className="checkbox" value={4}>Cổng 4</Checkbox>
+        <Checkbox disabled={disabled} value={4}>Cổng 4</Checkbox>
       </Col>
       <Col span={8}>
-        <Checkbox className="checkbox" value={5}>Cổng 5</Checkbox>
+        <Checkbox disabled={disabled} value={5}>Cổng 5</Checkbox>
       </Col>
     </Row>
   </Checkbox.Group>
@@ -80,5 +81,6 @@ export default function Popup(props) {
             </div>
         </div>
     </div>
-  )  
+  
+    )  
 }

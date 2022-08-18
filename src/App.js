@@ -6,11 +6,11 @@ import Menu from "./components/Home/menu";
 import Search from "./components/Home/search";
 import Home from "./components/Home/Home";
 import Management from './components/Management/Management';
-import Event from './components/EventList/EventList'
+import EventP from './components/Management/EventPakage'
 import { Route, Routes } from 'react-router-dom';
 
 import Check from './components/Check/Check';
-import Services from './components/Services/services';
+import Services from './components/Services/Services';
 
 const App = () => (
   <div className="container">
@@ -21,8 +21,8 @@ const App = () => (
       <Route path="/" element={<Home/>}></Route>
       <Route path="/management" element={<Management/>}></Route>
       <Route path="/check-ticket" element={<Check/>}></Route>
-      <Route path="/event-list" element={<Event/>}></Route>
       <Route path="/services" element={<Services/>}></Route>      
+      <Route path="/event-pakage" element={<EventP/>}></Route>
       </Routes>
     </Col>
     <Col span={6} pull={18}>

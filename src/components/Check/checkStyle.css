@@ -91,16 +91,25 @@ opacity: 0.7;
     margin-left: 22px;
     margin-top: 24px;
 }
-.check-content button{
+.check-content .FilterTickets button{
     padding: 10px 60px;
     color: #FF993C;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid;
     border-radius: 6px;
     margin-right: 12px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 142px;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+}
+.check-content .FilterTickets .start-date, .end-date{
+    display: flex;
+}
+.check-content  .FilterTickets .start-date .ant-space{
+    margin-left: 84px;
+}
+.check-content  .FilterTickets .end-date .ant-space {
+    margin-left: 70px;
 }

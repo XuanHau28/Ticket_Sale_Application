@@ -1,5 +1,5 @@
 .content .SearchList{
-    margin: 32px 0px 0px 48px;
+    margin: 10px 0px 0px 48px;
     width: 437px;
     height: 48px;
     background: #EDE6E6;
@@ -28,10 +28,30 @@
     margin-right: 12px;
 }
 .content .TicketList{
-    margin: 31px 24px 0px 24px;
+    margin: 31px 24px 0px 48px;
 }
 
  .ant-table-pagination-right{
     display: flex;
     justify-content: center;
+}
+.content .event-package .event,
+.content .family-package .family{
+    display: flex;
+    margin-left: 8px;
+}
+.content .event-package .event li,
+.content .family-package .family li{
+    padding-right: 20px;
+}
+.content .event-package ul li a,
+.content .family-package ul li a{
+    color: #2873eb;    
+    font-size: 18px;
+    line-height: 26px;
+}
+.content .family-package ul li .active,
+.content .event-package ul li .active{
+    color: #FF993C;
+    border-bottom: 3px solid #FF993C;
 }

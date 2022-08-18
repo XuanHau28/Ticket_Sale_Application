@@ -18,3 +18,13 @@
     border-radius: 8px;
     margin-right: 12px; 
 }
+.services .content .list-tickets {
+    margin: 24px 49px 0 49px;
+}
+.ant-table-row-level-0 {
+    opacity: 1;
+}
+.ant-space-item a {
+    color: #FF993C;
+    opacity: 1;
+}
