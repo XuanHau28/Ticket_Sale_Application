@@ -7,9 +7,9 @@ const { Option } = Select;
 
 export default function AddTicket(props) {
   return (props.trigger) ? (
-    <div className='add'>
+    <div className='update'>
         <div className='add-overlay'>
-            <div className='add-content'>
+            <div className='update-content'>
                 <h2>Thêm gói vé</h2>
                 <p style={{fontWeight: '600', fontSize: '16px'}}>Tên gói vé <span style={{color: 'red'}}>*</span></p>
                 <input className='enter-name' type='text' placeholder=' Nhập tên gói vé'></input>

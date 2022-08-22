@@ -4,10 +4,7 @@ import '../Services/servicesStyle.css';
 import ListTickets from './ListTickets'
 import AddTicket from './AddTicket';
 export default function Services() {
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal)
-  }
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
       <div className='services'>
     <div className='content'>
@@ -15,12 +12,12 @@ export default function Services() {
         <input className='SearchList' type="search" placeholder='Search' /> <img className='SearchIcon' src={Search} />
         <section className='check'>
         <button>Xuất file</button>
-        <button onClick={toggleModal}>Thêm gói vé </button>
+        <button onClick={() => setButtonPopup(true)}>Thêm gói vé </button>
         </section>
         <ListTickets />
-        {modal && (
-        <AddTicket />
-        )}
+      
+        <AddTicket trigger={buttonPopup} setTrigger={setButtonPopup} />
+       
     </div>
     </div>
   )

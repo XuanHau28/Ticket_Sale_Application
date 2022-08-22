@@ -5,9 +5,9 @@ import '../Management/popup.css'
 import { Checkbox, Col, Row } from 'antd';
 
 
-export default function Popup() {
+export default function Popup(props) {
 
-   
+  //disabled checkbox
   const [disabled, setDisabled] = useState(false);
   const clickDisabled = () => {
     setDisabled(!disabled);
@@ -16,10 +16,10 @@ export default function Popup() {
   //Radio checked
   const [value, setValue] = useState(0);
 
-  return  (
-  
+  return (props.trigger) ? (
+  <>
     <div className="popup">
-        <div className="overlay">
+        <div om className="overlay">
           <div className="model-content">
             <h2>Lọc vé</h2>
             <section className='fromday-today'>
@@ -77,10 +77,15 @@ export default function Popup() {
     </Row>
   </Checkbox.Group>
            </section>
-           <button >Lọc</button>
+           <button onClick={() => props.setTrigger(false)}>Lọc</button>
+           {props.children}
             </div>
         </div>
+
     </div>
+    
+   
+    </>
   
-    )  
+    ): "";
 }

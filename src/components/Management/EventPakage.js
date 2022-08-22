@@ -7,10 +7,7 @@ import Popup from './Popup.js';
 import { NavLink } from 'react-router-dom';
 
 export default function EventPakage() {
-    const [modal, setModal] = useState(false);
-    const toggleModal = () => {
-      setModal(!modal)
-    }
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className='content'>
         <div className='event-package'>
@@ -21,15 +18,15 @@ export default function EventPakage() {
         </ul>
         <input className='SearchList' type="search" placeholder='Search' /> <img className='SearchIcon' src={Search} />
         <section className='Filter'>
-            <button  onClick={toggleModal}><img src={Filter} />Lọc vé</button>
+            <button   onClick={() => setButtonPopup(true)}><img src={Filter} />Lọc vé</button>
             <button>Xuất file </button>
         </section>
-        {modal && (
-          <div onClick={toggleModal} className='overlay'>
-            <Popup >
+  
+          
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
             </Popup>
-            </div>
-        )}
+
+   
             <DataEvent />
             </div>
     </div>

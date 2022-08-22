@@ -1,6 +1,8 @@
 import { Space, Table, Tag } from 'antd';
-import React from 'react';
+import React, {useState} from 'react';
 import updateIcon from '../../assets/images/update.svg';
+import UpdateTicket from '../Services/UpdateTicket'
+
 const columns = [
     {
         title: 'STT',
@@ -92,5 +94,6 @@ const data = [
 ];
 
 const ListTickets = () => <Table className='list-tickets'  columns={columns} dataSource={data} />;
+
 
 export default ListTickets;

@@ -8,25 +8,10 @@ import { NavLink } from 'react-router-dom';
 
   
 export default function Management() {
-  // let menuRef = useRef();
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal)
-  }
-  
-  // useEffect(() => {
-  //  let handler = (event) => {
-  //     if(!menuRef.current.contains(event.target)){
-  //       setModal(false);
-  //   };
-  // };
 
-  //   document.addEventListener("mousedown", handler);
+  const [buttonPopup, setButtonPopup] = useState(false);
 
-  //   return() => {
-  //     document.removeEventListener("mousedown", handler);
-  //   }
-  // });
+
   return (
     <div className='content'>
       <div className='family-package'>
@@ -37,15 +22,13 @@ export default function Management() {
         </ul>
         <input className='SearchList' type="search" placeholder='Search' /> <img className='SearchIcon' src={Search} />
         <section className='Filter'>
-            <button  onClick={toggleModal}><img src={Filter} />Lọc vé</button>
+            <button  onClick={() => setButtonPopup(true)}><img src={Filter} />Lọc vé</button>
             <button>Xuất file </button>
         </section>
-        {modal && (
-          <div onClick={toggleModal} className='overlay'>
-            <Popup >
+        
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
             </Popup>
-            </div>
-        )}
+     
             <Data />
             </div>
     </div>
