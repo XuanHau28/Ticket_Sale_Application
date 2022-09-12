@@ -1,4 +1,4 @@
-.add .add-overlay{
+.update .update-overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     background-color: rgba(0,0,0,0.2);
     z-index: 999;
 }
-.add  .add-overlay  .add-content {
+.update  .update-overlay  .update-content {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -21,70 +21,70 @@
     border-radius: 16px;
     padding: 24px 32px;
 }
-.add .add-overlay .add-content h2{
+.update  .update-overlay .update-content h2{
     text-align: center;
     font-weight: 700;
-font-size: 24px;
-line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
 }
-.add .add-overlay .add-content .enter-name{
+.update .update-overlay .update-content .enter-name{
     Width:367px;
     Height:40px;
     border: 1px solid #A5A8B1;
     border-radius: 8px;
 }
-.add .add-content .date {
+.update .update-content .date {
     display: flex;
     margin-top: 20px;
 }
-.add .add-content .date p {
+.update .update-content .date p {
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
 }
-.add .add-content .expired-date {
+.update .update-content .expired-date {
     margin-left: 65px;;
 }
-.add .add-content .price{
+.update .update-content .price{
     margin-top: 20px;
 }
-.add .add-content .price span {
+.update .update-content .price span {
     font-weight: 500;
 font-size: 16px;
 line-height: 20px;
 
 }
-.add .add-content .price .single-price {
+.update .update-content .price .single-price {
     margin-bottom: 8px;
 }
-.add .add-content .price p{
+.update .update-content .price p{
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
 }
-.add .add-content .single-price input,
-.add .add-content .combo-price input{
+.update .update-content .single-price input,
+.update .update-content .combo-price input{
     width: 148px;
     height: 40px;   
     border: 1px solid #A5A8B1;  
     border-radius: 8px;
 }
-.add .add-content .status {
+.update .update-content .status {
     margin-top: 20px;
     font-weight: 600;
-font-size: 16px;
-line-height: 26px;
+    font-size: 16px;
+    line-height: 26px;
 }
-.add .add-content .status .ant-select{
+.update .update-content .status .ant-select{
     width: 176px;
 }
-.add .ant-select-arrow{
+.update .ant-select-arrow{
     color: #FF993C;
 }
 .ant-picker-suffix{
     color: #FF993C;
 }
-.add .add-content button:last-child{
+.update .update-content button:last-child{
     width: 160px;
     height: 48px;
     background: #FF993C;
@@ -92,10 +92,10 @@ line-height: 26px;
     color: #FFFFFF;
     margin-left: 24px;
 }
-.add .add-content .button {
+.update .update-content .button {
     margin-left: 180px;
 }
-.add .add-content button{
+.update .update-content button{
     width: 160px;
     height: 48px;
     border: 1px solid #FF993C;
@@ -105,9 +105,4 @@ line-height: 26px;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-}
-
-.add .add-content button:hover {
-    cursor: pointer;
-    opacity: 0.8;
 }

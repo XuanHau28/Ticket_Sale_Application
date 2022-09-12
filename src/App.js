@@ -8,7 +8,6 @@ import Home from "./components/Home/Home";
 import Management from './components/Management/Management';
 import EventP from './components/Management/EventPakage'
 import { Route, Routes } from 'react-router-dom';
-
 import Check from './components/Check/Check';
 import Services from './components/Services/Services';
 
@@ -29,6 +28,7 @@ const App = () => (
       <Menu />
     </Col>
   </Row>
+
   </div>
  
 );

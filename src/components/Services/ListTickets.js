@@ -1,7 +1,14 @@
 import { Space, Table, Tag } from 'antd';
 import React, {useState} from 'react';
 import updateIcon from '../../assets/images/update.svg';
-import UpdateTicket from '../Services/UpdateTicket'
+
+const Clickupdate = () =>{
+  const updateTab = document.querySelector('.updateTab')
+  const update = document.querySelector('.update')
+  updateTab.addEventListener('click' ,() => {
+    update.classList.add('open');
+  });
+}
 
 const columns = [
     {
@@ -61,7 +68,7 @@ const columns = [
     key: 'action',
     render: (_) => (
       <Space size="middle">
-        <a><img src={updateIcon} /> Cập nhật</a>
+        <a className='updateTab' onClick={Clickupdate}><img src={updateIcon} /> Cập nhật</a>
       </Space>
     ),
   },

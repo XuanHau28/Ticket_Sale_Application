@@ -14,7 +14,7 @@ export default function Popup(props) {
   }
 
   //Radio checked
-  const [value, setValue] = useState(0);
+
 
   return (props.trigger) ? (
   <>

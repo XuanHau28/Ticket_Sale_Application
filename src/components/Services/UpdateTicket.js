@@ -1,16 +1,16 @@
 import React from 'react';
 import { DatePicker, Space, Select, Checkbox } from 'antd';
-import '../Services/AddTicket.css'
+import '../Services/UpdateTicket.css';
 import { TimePicker } from 'antd';
 import moment from 'moment';
 const { Option } = Select;
 
-export default function AddTicket(props) {
-  return (props.trigger) ? (
+export default function UpdateTicket() {
+  return (
     <div className='update'>
-        <div className='add-overlay'>
+        <div className='update-overlay'>
             <div className='update-content'>
-                <h2>Thêm gói vé</h2>
+                <h2>Cập nhật gói vé</h2>
                 <p style={{fontWeight: '600', fontSize: '16px'}}>Tên gói vé <span style={{color: 'red'}}>*</span></p>
                 <input className='enter-name' type='text' placeholder=' Nhập tên gói vé'></input>
                 <div className='date'>
@@ -51,12 +51,11 @@ export default function AddTicket(props) {
                 </section>
                 <p><span style={{color: 'red'}}>*</span> là thông tin bắt buộc</p>
                 <section className='button'>
-                  <button  onClick={() => props.setTrigger(false)}>Huỷ</button>
-                  {props.children}
+                  <button>Huỷ</button>               
                   <button>Lưu</button>
                 </section>
             </div>
         </div>
     </div>
-  ) : "";
+  )
 }

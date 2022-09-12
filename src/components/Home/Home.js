@@ -11,6 +11,7 @@ const onChange = (date, dateString) => {
 export default function Home() {
  
   return (
+    <div className='home-content'>
     <div className='content'>
       <div className='home'>
         <h1>Thống kê</h1>
@@ -42,6 +43,6 @@ export default function Home() {
         </div>
         </div>
     </div>
-    
+    </div>
   )
 }

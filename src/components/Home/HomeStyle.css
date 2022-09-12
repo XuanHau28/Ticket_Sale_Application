@@ -104,6 +104,11 @@ nav a.active{
     margin-right: 32px;
     border-radius: 24px;
     margin-bottom: 32px;
+   
+}
+
+.home-content > .content {
+    height: 1540px;
 }
 
 .content h1 {
